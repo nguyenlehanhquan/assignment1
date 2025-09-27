@@ -1,7 +1,9 @@
 
 function DashboardOverview() {
     return (
-        <div></div>
+        <div>
+            <h1>Dashboard Overview</h1>
+        </div>
     );
 }
 

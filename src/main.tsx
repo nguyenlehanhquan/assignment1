@@ -4,8 +4,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import Home from "./pages/Home.tsx";
 import Login from "./pages/Login.tsx";
-import Dashboard from "./pages/Dashboard.tsx";
 import StudentRegister from "./pages/StudentRegister.tsx";
+import DashboardOverview from "./pages/DashboardOverview.tsx";
+import DashboardTestManage from "./pages/DashboardTestManage.tsx";
+import App from "./App.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,8 +15,11 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="/login" element={<Login/>}/>
-              <Route path="/dashboard" element={<Dashboard/>}/>
               <Route path="/studentregister" element={<StudentRegister/>}/>
+              <Route path="/dashboard" element={<App/>}>
+                  <Route index element={<DashboardOverview/>}/>
+                  <Route path="testmanage" element={<DashboardTestManage/>} />
+              </Route>
           </Routes>
       </BrowserRouter>
   </StrictMode>

@@ -1,7 +1,9 @@
 
 function DashboardTestManage() {
     return (
-        <div></div>
+        <div>
+            <h1>Dashboard Test Manage</h1>
+        </div>
     );
 }
 
