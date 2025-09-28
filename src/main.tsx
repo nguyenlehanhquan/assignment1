@@ -1,13 +1,13 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './index.css';
+import './main.css';
 import Home from "./pages/Home.tsx";
 import Login from "./pages/Login.tsx";
 import StudentRegister from "./pages/StudentRegister.tsx";
 import DashboardOverview from "./pages/DashboardOverview.tsx";
 import DashboardTestManage from "./pages/DashboardTestManage.tsx";
-import App from "./App.tsx";
+import DashboardLayout from "./components/DashboardLayout.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')!).render(
               <Route path="/" element={<Home/>}/>
               <Route path="/login" element={<Login/>}/>
               <Route path="/studentregister" element={<StudentRegister/>}/>
-              <Route path="/dashboard" element={<App/>}>
+              <Route path="/dashboard" element={<DashboardLayout/>}>
                   <Route index element={<DashboardOverview/>}/>
                   <Route path="testmanage" element={<DashboardTestManage/>} />
               </Route>
