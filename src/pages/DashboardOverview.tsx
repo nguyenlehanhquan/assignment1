@@ -50,8 +50,8 @@ function DashboardOverview() {
                     <h1 className="font-bold text-white text-[35px]">Chào mừng đến với Admin Dashboard</h1>
                     <p className="text-white text-[18px]">Quản lý cuộc thi Rung Chuông Vàng BTEC một cách hiệu quả</p>
                 </div>
-                <Link to="/">
-                    <div className="bg-white text-orange-500 font-bold rounded-[12px] items-center flex justify-center w-[100px] h-[120px] hover:bg-gray-300 transition-all duration-300">
+                <Link to="/dashboard/testmanage/create">
+                    <div className="bg-white text-orange-500 font-bold rounded-[12px] items-center flex justify-center w-[100px] h-[120px] hover:text-white hover:bg-gradient-to-r hover:from-blue-400 hover:to-green-600">
 
                             <div className="w-1/4 justify-center justify-self-center">
                                 Tạo đề thi mới

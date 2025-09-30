@@ -8,7 +8,9 @@ function Header() {
     return (
         <div className="border-2 flex items-center justify-between pr-[400px] pl-[400px] bg-white">
             <div className="flex items-center">
-                <FiBell className="m-3 text-white bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-[4px] text-[40px] p-2"/>
+                <Link to="/dashboard">
+                    <FiBell className="m-3 text-white bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-[4px] text-[40px] p-2"/>
+                </Link>
                 <div>
                     <h1 className="font-bold">Rung Chuông Vàng BTEC</h1>
                     <p className="text-gray-500">Admin Dashboard</p>

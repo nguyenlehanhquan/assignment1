@@ -5,7 +5,7 @@ import DashboardNavigator from "./DashboardNavigator.tsx";
 
 function DashboardLayout() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-100">
         <Header/>
         <div className="flex flex-col items-center justify-center">
             <DashboardNavigator/>

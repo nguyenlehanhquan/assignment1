@@ -17,6 +17,7 @@ function Login() {
                 </div>
 
                 <div className="w-5/6 flex flex-col items-center justify-center">
+
                     <label className="block mb-1 font-bold self-start">Email</label>
                     <div className="relative w-full mb-4">
                         <MdOutlineMailOutline className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
@@ -24,20 +25,19 @@ function Login() {
                     </div>
 
                     <label className="block mb-1 font-bold self-start">Mật khẩu</label>
-
                     <div className="relative w-full mb-4">
                         <FiLock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"/>
                         <input type="password" placeholder="A123456a@" className="border border-gray-300 rounded-md w-full p-2 pl-9" />
                     </div>
 
-                    <button className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-amber-50 font-bold w-full rounded-md m-3 h-10">Đăng nhập</button>
+                    <Link to="/dashboard">
+                        <button className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-amber-50 font-bold w-full rounded-md m-3 h-10">Đăng nhập</button>
+                    </Link>
                     <Link to="/">
                         <button className="font-bold mt-2 flex "><FaArrowLeft className="m-1"/>Quay lại trang chủ</button>
                     </Link>
                 </div>
             </form>
-
-
 
         </div>
     );
