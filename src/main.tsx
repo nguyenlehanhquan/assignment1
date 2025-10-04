@@ -9,6 +9,7 @@ import DashboardOverview from "./pages/DashboardOverview.tsx";
 import DashboardTestManage from "./pages/DashboardTestManage.tsx";
 import DashboardLayout from "./components/DashboardLayout.tsx";
 import TestCreate from "./components/TestCreate.tsx";
+import TazajMart from "./pages/TazajMart.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')!).render(
                   <Route path="testmanage" element={<DashboardTestManage/>} />
                   <Route path="testmanage/create" element={<TestCreate/>} />
               </Route>
+              <Route path="/tazajmart" element={<TazajMart/>}/>
           </Routes>
       </BrowserRouter>
   </StrictMode>

@@ -20,35 +20,35 @@ function Home() {
                 <p className="mt-1 font-bold text-[20px] text-center text-white">Cuộc thi kiến thức trực tuyến dành cho sinh viên BTEC. Thể hiện tài năng và giành những phần thưởng hấp dẫn!</p>
             </div>
 
-            <div className="flex gap-4 mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Link to="/studentregister">
-                    <button className="px-6 py-3 bg-white text-yellow-600 font-semibold rounded-lg shadow flex">
+                    <button className="px-6 py-3 bg-white text-yellow-600 font-semibold rounded-lg shadow flex md:items-center">
                         <FaPlayCircle className="mr-2 relative top-1" />
                         Tham gia thi ngay
                     </button>
                 </Link>
 
                 <Link to="/login">
-                    <button className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow flex">
+                    <button className="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow flex md:items-center">
                         <FaKey className="mr-2 relative top-1"/>
                         Đăng nhập Admin
                     </button>
                 </Link>
             </div>
-            <div className="flex gap-6 mt-10">
-                <div className="bg-yellow-200 bg-opacity-30 p-6 rounded-lg w-60 text-center text-white flex flex-col items-center">
+            <div className="flex flex-col sm:flex-row gap-6 mt-10">
+                <div className="flex-1 bg-yellow-200 bg-opacity-30 p-6 rounded-lg w-60 text-center text-white flex flex-col items-center">
                     <FaTrophy fontSize={2} color="#FFF" size={30} className="mb-3"/>
                     <p className="font-bold mb-2">Giải thưởng hấp dẫn</p>
                     <p className="text-sm">Cơ hội nhận những phần thưởng giá trị từ cuộc thi</p>
                 </div>
 
-                <div className="bg-yellow-200 bg-opacity-30 p-6 rounded-lg w-60 text-center text-white flex flex-col items-center">
+                <div className="flex-1 bg-yellow-200 bg-opacity-30 p-6 rounded-lg w-60 text-center text-white flex flex-col items-center">
                     <MdOutlinePeopleAlt fontSize={2} color="#FFF" size={30} className="mb-3"/>
                     <p className="font-bold mb-2">Cộng đồng sinh viên</p>
                     <p className="text-sm">Kết nối và giao lưu với các bạn sinh viên khác</p>
                 </div>
 
-                <div className="bg-yellow-200 bg-opacity-30 p-6 rounded-lg w-60 text-center text-white flex flex-col items-center">
+                <div className="flex-1 bg-yellow-200 bg-opacity-30 p-6 rounded-lg w-60 text-center text-white flex flex-col items-center">
                     <FaCalendar fontSize={2} color="#FFF" size={30} className="mb-3"/>
                     <p className="font-bold mb-2">Thi trực tuyến</p>
                     <p className="text-sm">Tham gia thi mọi lúc, mọi nơi với giao diện thân thiện</p>
