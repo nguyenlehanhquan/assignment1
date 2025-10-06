@@ -68,12 +68,12 @@ function TazajMart() {
                     </div>
                 </div>
                 <div className="bg-green-900 text-white p-2 my-5 rounded-[12px] px-10 py-12 gap-6 flex flex-col relative">
-                    <h1 className="text-5xl w-1/3 font-medium">Get <span className="text-yellow-300">free delivery</span> on <br/> shopping $200</h1>
-                    <p>Get the freshest groceries delivered right to your home. Save time, skip <br/>
+                    <h1 className="text-7xl w-2/3 font-medium">Get <span className="text-yellow-300">free delivery</span> on <br/> shopping $200</h1>
+                    <p className="text-xl">Get the freshest groceries delivered right to your home. Save time, skip <br/>
                         the lines, and enjoy the convenience of quick, efficient delivery.</p>
-                    <button className="self-start bg-yellow-300 text-green-900 font-bold px-6 py-2 rounded-[6px]">Learn More</button>
-                    <div className="absolute right-32 bottom-3">
-                        <img src={vegetableBasket} alt="vegetable_basket" className="object-contain h-[290px] w-auto"/>
+                    <button className="self-start bg-yellow-300 text-green-900 font-bold px-6 py-2 rounded-[6px] text-xl">Learn More</button>
+                    <div className="absolute right-24 bottom-4">
+                        <img src={vegetableBasket} alt="vegetable_basket" className="object-contain h-[340px] w-auto"/>
                     </div>
                 </div>
                 <div className="flex flex-col gap-5 my-7">
