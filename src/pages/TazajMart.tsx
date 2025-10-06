@@ -14,6 +14,9 @@ import chips from "../images/chips.png";
 import beef from "../images/beef.png";
 import honey from "../images/honey.png";
 import milk from "../images/milk.png";
+import oil from "../images/oil.png";
+import chicken from "../images/chicken.png";
+import vegetableBasket from "../images/vegetable_basket.png";
 import { ImLeaf } from "react-icons/im";
 import { FaStar } from "react-icons/fa";
 import { FaRegSnowflake } from "react-icons/fa";
@@ -64,11 +67,14 @@ function TazajMart() {
                         <NavLink to="/">Email support</NavLink>
                     </div>
                 </div>
-                <div className="bg-green-900 text-white p-2 my-5 rounded-[12px] px-10 py-12 gap-6 flex flex-col">
+                <div className="bg-green-900 text-white p-2 my-5 rounded-[12px] px-10 py-12 gap-6 flex flex-col relative">
                     <h1 className="text-5xl w-1/3 font-medium">Get <span className="text-yellow-300">free delivery</span> on <br/> shopping $200</h1>
                     <p>Get the freshest groceries delivered right to your home. Save time, skip <br/>
                         the lines, and enjoy the convenience of quick, efficient delivery.</p>
                     <button className="self-start bg-yellow-300 text-green-900 font-bold px-6 py-2 rounded-[6px]">Learn More</button>
+                    <div className="absolute right-32 bottom-3">
+                        <img src={vegetableBasket} alt="vegetable_basket" className="object-contain h-[290px] w-auto"/>
+                    </div>
                 </div>
                 <div className="flex flex-col gap-5 my-7">
                     <h1 className="text-green-900 font-bold text-2xl">All products</h1>
@@ -407,7 +413,53 @@ function TazajMart() {
                             </div>
                         </div>
                     </div>
-
+                    <div className="rounded-[12px] bg-gray-100 shadow">
+                        <div className="flex justify-between h-8"></div>
+                        <div className="p-3 flex flex-col gap-3">
+                            <div className="h-[300px] flex items-center justify-center">
+                                <img src={oil}  alt="tazajmart_product2" className="object-contain h-[300px] w-auto"/>
+                            </div>
+                            <h1 className="font-bold text-green-900 text-xl">Noor Sunflower 100% Fresh Oil 1.5 Litres</h1>
+                            <div className="flex flex-col gap-2">
+                                <div className="flex justify-between">
+                                    <p className="text-gray-400 font-medium">1.5Litr</p>
+                                    <p className="text-green-900 font-medium flex items-center gap-2">
+                                        <FaStar size={16} className="text-orange-500"/> (4.8/5)
+                                    </p>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <h1 className="font-bold text-3xl text-green-900">$15.25</h1>
+                                    <button className="bg-green-900 font-medium rounded-full w-10 h-10 pb-2 text-3xl text-white">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="rounded-[12px] bg-gray-100 shadow">
+                        <div className="flex justify-between h-8">
+                            <div className="font-medium text-white bg-orange-500 rounded-tl-[12px] rounded-br-[12px] px-3 py-1">20% OFF</div>
+                            <div className="font-medium text-white bg-gradient-to-r from-yellow-300 to-orange-400 rounded-tr-[12px] rounded-bl-[12px] px-3 py-1 flex items-center gap-2">
+                                <FaRegSnowflake /> Frozen
+                            </div>
+                        </div>
+                        <div className="p-3 flex flex-col gap-3">
+                            <div className="h-[300px] flex items-center justify-center">
+                                <img src={chicken}  alt="tazajmart_product1" className="object-contain h-[300px] w-auto"/>
+                            </div>
+                            <h1 className="font-bold text-green-900 text-xl">Garden Frozen Chicken Leg Cuts Skinless</h1>
+                            <div className="flex flex-col gap-2">
+                                <div className="flex justify-between">
+                                    <p className="text-gray-400 font-medium">4pc</p>
+                                    <p className="text-green-900 font-medium flex items-center gap-2">
+                                        <FaStar size={16} className="text-orange-500"/> (4.8/5)
+                                    </p>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <h1 className="font-bold text-3xl text-green-900">$12.35</h1>
+                                    <button className="bg-green-900 font-medium rounded-full w-10 h-10 pb-2 text-3xl text-white">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
