@@ -16,11 +16,14 @@ export default {
                     '50%': { transform: 'translateY(-5px)' }, // nhấp nhô lên 5px
                 },
             },
-            animation: {
-                'bounce-slow': 'bounce-slow 1s ease-in-out infinite',
-            },
+            // animation: {
+            //     'bounce-slow': 'bounce-slow 1s ease-in-out infinite',
+            // },
             backdropBlur: {
                 xs: '2px',
+            },
+            colors: {
+                green5bbb46: '#5bbb46',
             },
         },
     },
