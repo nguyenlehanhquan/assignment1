@@ -92,7 +92,7 @@ function OrganicFood() {
               </div>
               <div className="relative cursor-pointer">
                 <IoNotifications className="text-white" size={25} />
-                <div className="bg-red-500 rounded-full w-4 h-4 border border-white absolute -top-1 -right-1"></div>
+                <div className="bg-red-500 rounded-full w-4 h-4 border border-white absolute -top-1 -right-1 font"></div>
               </div>
             </div>
           </div>

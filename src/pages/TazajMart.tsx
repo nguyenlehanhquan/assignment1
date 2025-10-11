@@ -17,6 +17,7 @@ import milk from '../images/milk.png';
 import oil from '../images/oil.png';
 import chicken from '../images/chicken.png';
 import vegetableBasket from '../images/vegetable_basket.png';
+import logo from '../images/tazajmart_logo.png';
 import { ImLeaf } from 'react-icons/im';
 import { FaStar } from 'react-icons/fa';
 import { FaRegSnowflake } from 'react-icons/fa';
@@ -35,7 +36,7 @@ function TazajMart() {
       <div className="flex flex-col w-[1600px] gap-2">
         <div className="flex gap-10 justify-between items-center h-14 my-5">
           <div className="w-[220px]">
-            <img src="../images/tazajmart_logo.png" alt="tazajmart_logo" />
+            <img src={logo} alt="tazajmart_logo" />
           </div>
 
           <div className="flex items-center gap-5 text-green-900">
