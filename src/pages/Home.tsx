@@ -3,6 +3,7 @@ import { FaCalendar, FaKey, FaPlayCircle, FaTrophy } from 'react-icons/fa';
 import { MdOutlinePeopleAlt } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer.tsx';
+import LoginButton from "./LoginButton.tsx";
 
 function Home() {
   return (
@@ -55,6 +56,7 @@ function Home() {
           <p className="text-sm">Tham gia thi mọi lúc, mọi nơi với giao diện thân thiện</p>
         </div>
       </div>
+        <LoginButton/>
       <Footer />
     </div>
   );

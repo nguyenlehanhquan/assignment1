@@ -6,8 +6,20 @@ import { FaHourglassStart } from 'react-icons/fa';
 import { FaHourglassEnd } from 'react-icons/fa';
 import { LuClock } from 'react-icons/lu';
 import { TiDocumentText } from 'react-icons/ti';
+import { useAuth } from '../contexts/AuthContext.tsx';
 
 function DashboardTestManage() {
+
+    const { user, isAuthenticated } = useAuth();
+
+    if (!isAuthenticated) {
+        return <p>Vui lòng đăng nhập để quản lý đề thi</p>;
+    }
+
+    if (!user) {
+        return <p>Đang tải thông tin người dùng...</p>
+    }
+
   return (
     <div className="w-[1760px] ">
       <div className="flex justify-between">
